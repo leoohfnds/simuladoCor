@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulado de Cor</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sumulador de Cores</h1>
+      <div>
+        <label
+          >(R) Vermelho
+          <input
+            type="range"
+            value="255"
+            min="0"
+            max="255"
+            id="rangeColorRed"
+          />
+          <input
+            class="input-text"
+            type="text"
+            value="255"
+            disabled
+            id="inputValueRed"
+          />
+        </label>
+      </div>
+
+      <div>
+        <label
+          >(G) Verde
+          <input
+            type="range"
+            value="255"
+            min="0"
+            max="255"
+            id="rangeColorGreen"
+          />
+          <input
+            class="input-text"
+            type="text"
+            value="255"
+            name=""
+            disabled
+            id="inputValueGreen"
+          />
+        </label>
+      </div>
+
+      <div>
+        <label
+          >(B) Azul
+          <input
+            type="range"
+            min="0"
+            value="255"
+            max="255"
+            id="rangeColorBlue"
+          />
+          <input
+            class="input-text"
+            type="text"
+            value="255"
+            disabled
+            id="inputValueBlue"
+          />
+        </label>
+      </div>
+      <div
+        class="divCurrentColor"
+        style="background-color: rgb(255, 255, 255);"
+      ></div>
+    </div>
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
